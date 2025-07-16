@@ -14,7 +14,7 @@ class Solution:
         is_vowel = False
         is_consonant = False
         for char in word:
-            if not char.isalpha():
+            if not char.isalpha() or not char.isdigit():
                 return False
             if char in vowels:
                 is_vowel = True
